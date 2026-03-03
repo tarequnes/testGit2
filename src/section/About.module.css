@@ -1,0 +1,61 @@
+.about{
+    padding: 6rem 2rem;
+    background-color: rgb(27, 31, 77);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slogan h1{
+ font-size: 2.5rem;
+ margin-bottom: 1rem;
+ color : black;
+}
+.slogan p{
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    margin-bottom: 1rem;
+    color: white;
+}
+.card img{
+    max-width: 80px;
+}
+.card h3{
+    font-size: 1rem;
+    margin: 0;
+    color: cadetblue;
+}
+.news h1{
+    color: rgb(157, 145, 198);
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.grid{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+    width: 50vw;
+}
+.card{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 180px;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}

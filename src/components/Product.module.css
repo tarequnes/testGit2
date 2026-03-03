@@ -1,0 +1,26 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 1 250px;
+
+}
+
+.product img{
+    max-width: 100%;
+    min-width: _;
+    border-radius: 4px;
+}
+
+.product del {
+    text-decoration-color: red;
+}
+.product strong{
+    color: green;
+}
+.product li {
+    list-style-type: none;
+}

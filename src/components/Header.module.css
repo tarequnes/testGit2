@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: darkgray;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  color: white;
+  z-index: 999;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* hamburger مخبي ف desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile */
+@media (max-width:768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: darkgray;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+    border-radius: 8px;
+  }
+
+  .nav a {
+    margin: 1rem 0;
+  }
+
+  .active {
+    display: flex;
+  }
+}
