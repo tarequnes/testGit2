@@ -6,8 +6,11 @@
     scroll-behavior: smooth;
 }
 main {
-    
+
     display: flex;
     flex-direction: column;
-    /* gap: 4rem; */
+    gap: 4rem;
+}
+body{
+    overflow-x: hidden;
 }

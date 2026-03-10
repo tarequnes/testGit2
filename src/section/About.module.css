@@ -25,6 +25,11 @@
     margin: 0;
     color: cadetblue;
 }
+.card h2{
+    font-size: 1rem;
+    margin: 0;
+    color: cadetblue;
+}
 .news h1{
     color: rgb(157, 145, 198);
     font-size: 1.4rem;
@@ -46,7 +51,6 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 1.5rem 0;
-    width: 50vw;
 }
 .card{
     background-color: white;

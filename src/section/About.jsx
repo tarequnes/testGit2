@@ -16,7 +16,7 @@ function About () {
          { 
             brands.map(brand => (
                 <div key={brand.id} className={style.card}>
-                 <img src={brand.image} />
+                 <img src={brand.image} alt={brand.name} />
                  <h2>{brand.name}</h2>
                 </div>
             ))
@@ -30,7 +30,7 @@ function About () {
          { 
             families.map(f => (
                 <div key={f.id} className={style.card}>
-                 <img src={f.image} />
+                 <img src={f.image} alt={f.name} />
                  <h2>{f.name}</h2>
                 </div>
             ))
