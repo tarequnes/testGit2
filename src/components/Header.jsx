@@ -8,14 +8,13 @@ function Header() {
     <header className={style.header}>
       <div className={style.logo}>eComm App</div>
 
-      {/* Hamburger button */}
-      <div
+      <button
         className={style.hamburger}
-        onClick={() => setIsOpen(prev => !prev)}
+        onClick={() => setIsOpen((prev) => !prev)}
       >
         ☰
-      </div>
-       
+      </button>
+
       <nav className={`${style.nav} ${isOpen ? style.active : ""}`}>
         <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
         <a href="#products" onClick={() => setIsOpen(false)}>Products</a>
