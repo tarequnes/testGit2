@@ -6,7 +6,7 @@ function Home() {
     return (
         <section id="home" className={style.home}>
          <div className={style.slogan}>
-          <h1>Hello Welcom to our store !</h1>
+          <h1>Hello Welcom to our store Mate !</h1>
           <p>
             You're here because of the quality of our products and the trust that you have <br />
             on us, it's a pleasure to work with you !!
