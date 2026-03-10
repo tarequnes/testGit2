@@ -1,49 +1,45 @@
-import style from "./Home.module.css"
-import {brands} from "../data/brand";
-import {families} from "../data/families";
-// import {products } from "../data/product";
+import style from "./Home.module.css";
+import { brands } from "../data/brand";
+import { families } from "../data/families";
+
 function Home() {
-    return (
-        <section id="home" className={style.home}>
-         <div className={style.slogan}>
-          <h1>Hello Welcom to our store Mate !</h1>
-          <p>
-            You're here because of the quality of our products and the trust that you have <br />
-            on us, it's a pleasure to work with you !!
-          </p>
-         </div>
-         <div className={style.news}>
-        <div>
-            <h1> Nos meilleurs marquers </h1>
-                <div className={style.grid}>
-            {
-                brands.slice(0,3).map(brand => (
-                    <div key={brand.id} className={style.card}>
-                     <img src={brand.image}/>
-                     <h3>{brand.name}</h3>
-                    </div>
-                ))
-            }
-          </div>
+  return (
+    <section id="home" className={style.home}>
+      <div className={style.slogan}>
+        <h1>Welcome to our store</h1>
+        <p>
+          We offer high-quality products with a premium shopping experience.
+          Discover top brands and the best performance families in one place.
+        </p>
+      </div>
 
-
-        </div>
-                  <div>
-            <h1> Nos meilleurs families </h1>
-                <div className={style.grid}>
-            {
-                families.slice(0,3).map(f => (
-                    <div key={f.id} className={style.card}>
-                     <img src={f.image}/>
-                     <h3>{f.name}</h3>
-                    </div>
-                ))
-            }
+      <div className={style.news}>
+        <div className={style.block}>
+          <h2>Nos meilleures marques</h2>
+          <div className={style.grid}>
+            {brands.slice(0, 3).map((brand) => (
+              <div key={brand.id} className={style.card}>
+                <img src={brand.image} alt={brand.name} />
+                <h3>{brand.name}</h3>
+              </div>
+            ))}
           </div>
         </div>
-            
-         </div>
-        </section>
-    )
+
+        <div className={style.block}>
+          <h2>Nos meilleures familles</h2>
+          <div className={style.grid}>
+            {families.slice(0, 3).map((family) => (
+              <div key={family.id} className={style.card}>
+                <img src={family.image} alt={family.name} />
+                <h3>{family.name}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
+
 export default Home;
